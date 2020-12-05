@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.row .flex-column{
+    flex: 25%;
+    max-width:25%;
+    overflow: hidden;
+    padding: 0 4px;
+     height: 100%;
+}
+.row .flex-column img{
+    width: 100%;
+
+    cursor: pointer;
+    margin-top: 2%;
+    vertical-align: middle;
+    border-radius: 5px;
+    
+}
+.abc{
+    height: 215px; !important;
+}
+.abcd{
+    height: 246px; !important;
+}
+
+
+
+@media only screen and (max-width:800px ){
+    .row .flex-column{
+        flex: 50%;
+        max-width: 50%;
+        margin-left: 15px;
+        padding-left: 10px;
+
+    }
+}
+@media only screen and (max-width:680px ){
+    .row .flex-column{
+        flex: 100%;
+        margin-left: 15px;
+        max-width: 100%;
+        padding-left: 10px;
+
+
+    }
+}
